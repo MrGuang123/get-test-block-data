@@ -1,0 +1,18 @@
+{
+  "name": "get-test-block-data",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.studio.thegraph.com/deploy/ get-test-block-data",
+    "create-local": "graph create --node http://localhost:8020/ get-test-block-data",
+    "remove-local": "graph remove --node http://localhost:8020/ get-test-block-data",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 get-test-block-data",
+    "test": "graph test"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.97.1",
+    "@graphprotocol/graph-ts": "0.37.0"
+  },
+  "devDependencies": { "matchstick-as": "0.6.0" }
+}
